@@ -1,0 +1,268 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: Montserrat, MontserratV2, Verdana, Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:  lavender;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.left {
+  background-color: black;
+}
+
+.left button .box {
+  width: 150px;
+  height: 45px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.left button{
+  color: white;
+  background: black;
+  border: black;
+  padding: 0;
+  cursor: pointer;
+}
+
+.middle {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(41, 197, 197);
+  padding: 10px;
+}
+
+.bottom-nav a {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.bottom-nav a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right .saveIcon{
+  margin-right: 10px;
+}
+.right .profile{
+  display: flex;
+  flex-direction: column;
+}
+.profile .info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.info p{
+  padding-right: 5px;
+  font-weight: 500;
+}
+.info img{
+  border-radius: 50%;
+}
+.profile button{
+   font-weight: 400;
+}
+
+.article{
+  margin: 10px 0px;
+}
+
+.article-wrap {
+  max-width: 700px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  box-shadow: 0 2px 4px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.title button,.right .saveIcon button{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.title p {
+  margin: 0;
+}
+
+.specs {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.specs p {
+  margin: 0;
+}
+
+.article-photo {
+  margin-bottom: 20px;
+}
+
+.article-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.article-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.article-desc p {
+  margin: 0;
+}
+.content {
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+.savedArticle{
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(200, 209, 217);
+  border-radius: 5px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  box-shadow: 0 2px 4px;
+}
+.savedArticle a{
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.saveWrap{
+  text-align: left;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+form div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+div label{
+  font-weight: normal;
+}
+form p{
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.savedArticle{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 720px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  lavender;
+  }
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .left {
+    margin-bottom: 10px;
+  }
+  .bottom-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .right {
+    flex-direction: column;
+  }
+  
+  .right .profile {
+    margin-top: 10px;
+  }
+  .article-wrap {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .article-desc {
+    font-size: 14px;
+  }
+}
