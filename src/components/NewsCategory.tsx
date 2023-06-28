@@ -22,7 +22,7 @@ export const NewsCategory: React.FC<NewsCategoryProps> = ({ category }) => {
     const fetchNewsArticles = async () => {
       try {
         const response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&pageSize=100&apiKey=242127a50339455b83d77d383c89c8a6`
+          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&pageSize=100`//apiKey={your newz api key}
         );
         const data = await response.json();
         setArticles(data.articles);

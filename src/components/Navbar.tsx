@@ -58,7 +58,7 @@ export const Navbar=()=>{
             params: {
               q: query,
               sortBy: sortBy ? sortBy : 'publishedAt',
-              apiKey: '242127a50339455b83d77d383c89c8a6',
+             // apiKey: 'your newzAPI key',
             },
           });
       
@@ -88,7 +88,7 @@ export const Navbar=()=>{
           const response = await axios.get('https://newsapi.org/v2/everything', {
             params: {
               q: query,
-              apiKey: '242127a50339455b83d77d383c89c8a6',
+              //apiKey: 'your Newz api key',
             },
           });
     
